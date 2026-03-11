@@ -1,1 +1,1 @@
-# Data-structure-21
+#include <stdio.h>Int graph[4][4]={{0,1,1,0},{1,0,0,1},{1,0,0,1},{0,1,1,0}};Int visited[4]={0};Void dfs(int v){Printf(“%d “,v);Visited[v]=1;For(int i=0;i<4;i++){If(graph[v][i]==1 && !visited[i])Dfs(i);}}Int main(){Printf(“DFS Traversal:\n”);Dfs(0);Return 0;}OUTPUT 37DFS Traversal:0 1 3 2
